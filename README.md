@@ -1,4 +1,4 @@
-# OctoBot-Core-3
+# OctoBot Net Core 3
 
 <b>Eng:</b><br>
 Based on the project: https://github.com/Drakkar-Software/OctoBot (v.0.3.8)<br>
