@@ -10,7 +10,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-	  <OutputPath>D:\CSharp\Git Rebuilds\OctoBot\OctoBot\bin\Debug\netcoreapp3.1\Tentacles\Evaluator\Strategies\</OutputPath>
+	  <OutputPath>D:\CSharp\Git Rebuilds\OctoBot\OctoBot\bin\Debug\netcoreapp3.1\Tentacles\Evaluator\TA\</OutputPath>
 	</PropertyGroup>
 
   <ItemGroup>
