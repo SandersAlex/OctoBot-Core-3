@@ -33,19 +33,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Evaluator", "Evaluator", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RealTime", "RealTime", "{672D71F2-F203-489B-BECF-FDFA2666388A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.InDevelopmentRealTimeEvaluators", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators.csproj", "{F66B96EE-0293-4918-8803-53B4805F7E88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.InDevelopmentRealTimeEvaluators", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators.csproj", "{F66B96EE-0293-4918-8803-53B4805F7E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.InstantFluctuationsEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.InstantFluctuationsEvaluator\OctoBot.Tentacles.InstantFluctuationsEvaluator.csproj", "{D4C129AA-D553-4F2B-8250-0236D5B5E039}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.InstantFluctuationsEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.InstantFluctuationsEvaluator\OctoBot.Tentacles.InstantFluctuationsEvaluator.csproj", "{D4C129AA-D553-4F2B-8250-0236D5B5E039}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.PriceRefresherEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.PriceRefresherEvaluator\OctoBot.Tentacles.PriceRefresherEvaluator.csproj", "{771E9655-9B99-46AD-9034-76469A71B8DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.PriceRefresherEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.PriceRefresherEvaluator\OctoBot.Tentacles.PriceRefresherEvaluator.csproj", "{771E9655-9B99-46AD-9034-76469A71B8DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.SignalEvaluators", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.SignalEvaluators\OctoBot.Tentacles.SignalEvaluators.csproj", "{84E039A8-88E6-4973-A1EF-524A69F1C5C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.SignalEvaluators", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.SignalEvaluators\OctoBot.Tentacles.SignalEvaluators.csproj", "{84E039A8-88E6-4973-A1EF-524A69F1C5C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Social", "Social", "{B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.InDevelopmentSocialEvaluators", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentSocialEvaluators\OctoBot.Tentacles.InDevelopmentSocialEvaluators.csproj", "{5F25B568-073A-4F6B-8D04-EE8847063946}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.InDevelopmentSocialEvaluators", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentSocialEvaluators\OctoBot.Tentacles.InDevelopmentSocialEvaluators.csproj", "{5F25B568-073A-4F6B-8D04-EE8847063946}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.ForumEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.ForumEvaluator\OctoBot.Tentacles.ForumEvaluator.csproj", "{0A132D09-9DE3-4544-AFDE-51B3390DDFB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.ForumEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.ForumEvaluator\OctoBot.Tentacles.ForumEvaluator.csproj", "{0A132D09-9DE3-4544-AFDE-51B3390DDFB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.NewsEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.NewsEvaluator\OctoBot.Tentacles.NewsEvaluator.csproj", "{71806FC4-B74F-461A-90BF-D818213EA5E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{0A132D09-9DE3-4544-AFDE-51B3390DDFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A132D09-9DE3-4544-AFDE-51B3390DDFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A132D09-9DE3-4544-AFDE-51B3390DDFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71806FC4-B74F-461A-90BF-D818213EA5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71806FC4-B74F-461A-90BF-D818213EA5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71806FC4-B74F-461A-90BF-D818213EA5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71806FC4-B74F-461A-90BF-D818213EA5E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,6 +139,7 @@ Global
 		{B1BB3FD4-A6B0-4CC2-9BDD-45416215713C} = {99A2CB2A-E4B5-4495-B13E-2E36B9BABE01}
 		{5F25B568-073A-4F6B-8D04-EE8847063946} = {B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}
 		{0A132D09-9DE3-4544-AFDE-51B3390DDFB1} = {B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}
+		{71806FC4-B74F-461A-90BF-D818213EA5E4} = {B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A9A7206C-B3E7-462E-9C7F-27E3BE253AB2}
