@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.ForumEval
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.NewsEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.NewsEvaluator\OctoBot.Tentacles.NewsEvaluator.csproj", "{71806FC4-B74F-461A-90BF-D818213EA5E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.StatsEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.StatsEvaluator\OctoBot.Tentacles.StatsEvaluator.csproj", "{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{71806FC4-B74F-461A-90BF-D818213EA5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71806FC4-B74F-461A-90BF-D818213EA5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71806FC4-B74F-461A-90BF-D818213EA5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +146,7 @@ Global
 		{5F25B568-073A-4F6B-8D04-EE8847063946} = {B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}
 		{0A132D09-9DE3-4544-AFDE-51B3390DDFB1} = {B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}
 		{71806FC4-B74F-461A-90BF-D818213EA5E4} = {B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}
+		{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542} = {B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A9A7206C-B3E7-462E-9C7F-27E3BE253AB2}
