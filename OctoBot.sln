@@ -51,6 +51,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.NewsEvalu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.StatsEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.StatsEvaluator\OctoBot.Tentacles.StatsEvaluator.csproj", "{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategies", "Strategies", "{6FF6763E-17DA-4BD3-B228-2A2A1A0BD57B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.DipAnalyserStrategyEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.DipAnalyserStrategyEvaluator\OctoBot.Tentacles.DipAnalyserStrategyEvaluator.csproj", "{5733642A-5548-4925-A047-9709EEDA38B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.HighFrequencyStrategyEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.HighFrequencyStrategyEvaluator\OctoBot.Tentacles.HighFrequencyStrategyEvaluator.csproj", "{C4253732-545A-4E83-B8A7-F3DE967012F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.MarketMakingStartegyEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.MarketMakingStartegyEvaluator\OctoBot.Tentacles.MarketMakingStartegyEvaluator.csproj", "{4EBD3CE4-ECD7-4A74-A7B3-5F50577B6E3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.MarketStabilityStrategyEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.MarketStabilityStrategyEvaluator\OctoBot.Tentacles.MarketStabilityStrategyEvaluator.csproj", "{DC4ED1FC-5AF3-4A01-ACDD-7E9DD59DFB42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.MixedStrategiesEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.MixedStrategiesEvaluator\OctoBot.Tentacles.MixedStrategiesEvaluator.csproj", "{B78EE85C-41F7-4A00-B15F-670C801F24FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.MoveSignalsStrategyEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.MoveSignalsStrategyEvaluator\OctoBot.Tentacles.MoveSignalsStrategyEvaluator.csproj", "{82AD557D-E32E-44A5-80B0-E2AF84445CFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.StaggeredOrdersStrategyEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.StaggeredOrdersStrategyEvaluator\OctoBot.Tentacles.StaggeredOrdersStrategyEvaluator.csproj", "{2C3F27A6-A77E-4885-94AD-4DF552AC0D9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +145,34 @@ Global
 		{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5733642A-5548-4925-A047-9709EEDA38B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5733642A-5548-4925-A047-9709EEDA38B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5733642A-5548-4925-A047-9709EEDA38B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5733642A-5548-4925-A047-9709EEDA38B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4253732-545A-4E83-B8A7-F3DE967012F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4253732-545A-4E83-B8A7-F3DE967012F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4253732-545A-4E83-B8A7-F3DE967012F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4253732-545A-4E83-B8A7-F3DE967012F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EBD3CE4-ECD7-4A74-A7B3-5F50577B6E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EBD3CE4-ECD7-4A74-A7B3-5F50577B6E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EBD3CE4-ECD7-4A74-A7B3-5F50577B6E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EBD3CE4-ECD7-4A74-A7B3-5F50577B6E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4ED1FC-5AF3-4A01-ACDD-7E9DD59DFB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4ED1FC-5AF3-4A01-ACDD-7E9DD59DFB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4ED1FC-5AF3-4A01-ACDD-7E9DD59DFB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4ED1FC-5AF3-4A01-ACDD-7E9DD59DFB42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B78EE85C-41F7-4A00-B15F-670C801F24FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78EE85C-41F7-4A00-B15F-670C801F24FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78EE85C-41F7-4A00-B15F-670C801F24FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78EE85C-41F7-4A00-B15F-670C801F24FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82AD557D-E32E-44A5-80B0-E2AF84445CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82AD557D-E32E-44A5-80B0-E2AF84445CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82AD557D-E32E-44A5-80B0-E2AF84445CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82AD557D-E32E-44A5-80B0-E2AF84445CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3F27A6-A77E-4885-94AD-4DF552AC0D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3F27A6-A77E-4885-94AD-4DF552AC0D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3F27A6-A77E-4885-94AD-4DF552AC0D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3F27A6-A77E-4885-94AD-4DF552AC0D9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -147,6 +191,14 @@ Global
 		{0A132D09-9DE3-4544-AFDE-51B3390DDFB1} = {B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}
 		{71806FC4-B74F-461A-90BF-D818213EA5E4} = {B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}
 		{48D89B7D-1FB6-4533-ABCA-3B43DDC0C542} = {B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}
+		{6FF6763E-17DA-4BD3-B228-2A2A1A0BD57B} = {99A2CB2A-E4B5-4495-B13E-2E36B9BABE01}
+		{5733642A-5548-4925-A047-9709EEDA38B1} = {6FF6763E-17DA-4BD3-B228-2A2A1A0BD57B}
+		{C4253732-545A-4E83-B8A7-F3DE967012F5} = {6FF6763E-17DA-4BD3-B228-2A2A1A0BD57B}
+		{4EBD3CE4-ECD7-4A74-A7B3-5F50577B6E3C} = {6FF6763E-17DA-4BD3-B228-2A2A1A0BD57B}
+		{DC4ED1FC-5AF3-4A01-ACDD-7E9DD59DFB42} = {6FF6763E-17DA-4BD3-B228-2A2A1A0BD57B}
+		{B78EE85C-41F7-4A00-B15F-670C801F24FA} = {6FF6763E-17DA-4BD3-B228-2A2A1A0BD57B}
+		{82AD557D-E32E-44A5-80B0-E2AF84445CFF} = {6FF6763E-17DA-4BD3-B228-2A2A1A0BD57B}
+		{2C3F27A6-A77E-4885-94AD-4DF552AC0D9A} = {6FF6763E-17DA-4BD3-B228-2A2A1A0BD57B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A9A7206C-B3E7-462E-9C7F-27E3BE253AB2}

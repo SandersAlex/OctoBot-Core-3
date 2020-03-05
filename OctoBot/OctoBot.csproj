@@ -22,8 +22,10 @@
     <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators.csproj" />
     <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentSocialEvaluators\OctoBot.Tentacles.InDevelopmentSocialEvaluators.csproj" />
     <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.InstantFluctuationsEvaluator\OctoBot.Tentacles.InstantFluctuationsEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.NewsEvaluator\OctoBot.Tentacles.NewsEvaluator.csproj" />
     <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.PriceRefresherEvaluator\OctoBot.Tentacles.PriceRefresherEvaluator.csproj" />
     <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.SignalEvaluators\OctoBot.Tentacles.SignalEvaluators.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.StatsEvaluator\OctoBot.Tentacles.StatsEvaluator.csproj" />
     <ProjectReference Include="..\OctoBot.Tentacles.Manager\OctoBot.Tentacles.Manager.csproj" />
     <ProjectReference Include="..\OctoBot.Tentacles\OctoBot.Tentacles.csproj" />
     <ProjectReference Include="..\OctoBot.Utils\OctoBot.Utils.csproj" />
