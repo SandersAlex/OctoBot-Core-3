@@ -14,7 +14,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\OctoBot.Evaluators\OctoBot.Evaluators.csproj" />
+	  <ProjectReference Include="..\..\OctoBot.Evaluators\OctoBot.Evaluators.csproj" />
 	</ItemGroup>
 
 </Project>

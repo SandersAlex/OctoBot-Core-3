@@ -8,13 +8,13 @@
     <OutputPath>D:\CSharp\Git Rebuilds\OctoBot\OctoBot\bin\Debug\netcoreapp3.1\Tentacles\Evaluator\RealTime\</OutputPath>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\OctoBot.Evaluators\OctoBot.Evaluators.csproj" />
-  </ItemGroup>
-
 	<PropertyGroup>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\OctoBot.Evaluators\OctoBot.Evaluators.csproj" />
+	</ItemGroup>
 
 </Project>

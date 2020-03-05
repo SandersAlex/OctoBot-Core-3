@@ -33,7 +33,7 @@ namespace OctoBot.Tentacles
 		}
 		async protected override void EvalImpl()
 		{
-			throw new NotImplementedException();
+			Debug.WriteLine(1);
 		}
 	}
 }

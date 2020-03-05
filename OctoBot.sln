@@ -33,19 +33,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Evaluator", "Evaluator", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RealTime", "RealTime", "{672D71F2-F203-489B-BECF-FDFA2666388A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.InDevelopmentRealTimeEvaluators", "OctoBot.Tentacles.InDevelopmentRealTimeEvaluators\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators.csproj", "{F66B96EE-0293-4918-8803-53B4805F7E88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.InDevelopmentRealTimeEvaluators", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators.csproj", "{F66B96EE-0293-4918-8803-53B4805F7E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.InstantFluctuationsEvaluator", "OctoBot.Tentacles.InstantFluctuationsEvaluator\OctoBot.Tentacles.InstantFluctuationsEvaluator.csproj", "{D4C129AA-D553-4F2B-8250-0236D5B5E039}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.InstantFluctuationsEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.InstantFluctuationsEvaluator\OctoBot.Tentacles.InstantFluctuationsEvaluator.csproj", "{D4C129AA-D553-4F2B-8250-0236D5B5E039}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.PriceRefresherEvaluator", "OctoBot.Tentacles.PriceRefresherEvaluator\OctoBot.Tentacles.PriceRefresherEvaluator.csproj", "{771E9655-9B99-46AD-9034-76469A71B8DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.PriceRefresherEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.PriceRefresherEvaluator\OctoBot.Tentacles.PriceRefresherEvaluator.csproj", "{771E9655-9B99-46AD-9034-76469A71B8DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.SignalEvaluators", "OctoBot.Tentacles.SignalEvaluators\OctoBot.Tentacles.SignalEvaluators.csproj", "{84E039A8-88E6-4973-A1EF-524A69F1C5C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.SignalEvaluators", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.SignalEvaluators\OctoBot.Tentacles.SignalEvaluators.csproj", "{84E039A8-88E6-4973-A1EF-524A69F1C5C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Social", "Social", "{B1BB3FD4-A6B0-4CC2-9BDD-45416215713C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.InDevelopmentSocialEvaluators", "OctoBot.Tentacles.InDevelopmentSocialEvaluators\OctoBot.Tentacles.InDevelopmentSocialEvaluators.csproj", "{5F25B568-073A-4F6B-8D04-EE8847063946}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.InDevelopmentSocialEvaluators", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentSocialEvaluators\OctoBot.Tentacles.InDevelopmentSocialEvaluators.csproj", "{5F25B568-073A-4F6B-8D04-EE8847063946}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.ForumEvaluator", "OctoBot.Tentacles.ForumEvaluator\OctoBot.Tentacles.ForumEvaluator.csproj", "{0A132D09-9DE3-4544-AFDE-51B3390DDFB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.ForumEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.ForumEvaluator\OctoBot.Tentacles.ForumEvaluator.csproj", "{0A132D09-9DE3-4544-AFDE-51B3390DDFB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
