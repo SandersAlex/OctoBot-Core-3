@@ -1,0 +1,60 @@
+{
+	"Core": {
+		"Debug": false,
+		"DevMode": false,
+		"Perf": false,
+		"SaveEvaluations": false,
+		"PerformanceAnalyser": false,
+		"AcceptedTerms": false,
+		"Backtesting": {
+			"Files": []
+		},
+		"CryptoCurrencies": {
+			"Bitcoin": {
+				"Pairs": [ "BTC/USDT" ],
+				"Quote": ""
+			}
+		},
+		"DataCollector": {
+			"Symbol": ""
+		},
+		"Exchanges": {
+			"Binance": {
+				"ApiKey": "your-api-key-here",
+				"ApiSecret": "your-api-secret-here"
+			}
+		},
+		"Metrics": {
+			"Enabled": false,
+			"MetricsBotId": ""
+		},
+		"Notification": {
+			"GlobalInfo": true,
+			"PriceAlerts": true,
+			"Trades": true,
+			"NotificationType": []
+		},
+		"Services": {},
+		"TentaclesPackages": [],
+		"Trader": {
+			"Enabled": false
+		},
+		"TraderSimulator": {
+			"Enabled": true,
+			"Fees": {
+				"Maker": 0.1,
+				"Taker": 0.1
+			},
+			"StartingPortfolio": {
+				"BTC": 10,
+				"USDT": 1000
+			}
+		},
+		"Trading": {
+			"MultiSessionProfitability": false,
+			"ReferenceMarket": "BTC",
+			"Risk": 0.5
+		},
+		"WatchedSymbols": []
+	}
+}

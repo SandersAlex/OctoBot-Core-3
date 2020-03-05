@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CompareNETObjects" Version="4.65.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.13" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OctoBot.Assets\OctoBot.Assets.csproj" />
+    <ProjectReference Include="..\OctoBot.Core\OctoBot.Core.csproj" />
+    <ProjectReference Include="..\OctoBot.Evaluators\OctoBot.Evaluators.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.InstantFluctuationsEvaluator\OctoBot.Tentacles.InstantFluctuationsEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Manager\OctoBot.Tentacles.Manager.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.PriceRefresherEvaluator\OctoBot.Tentacles.PriceRefresherEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.SignalEvaluators\OctoBot.Tentacles.SignalEvaluators.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles\OctoBot.Tentacles.csproj" />
+    <ProjectReference Include="..\OctoBot.Utils\OctoBot.Utils.csproj" />
+    <ProjectReference Include="..\OctoBot.Vars\OctoBot.Vars.csproj" />
+    <ProjectReference Include="..\Python Libs\ArgParse\ArgParse.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Config\config_paths.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\config_schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\core.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\default_config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\logging.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="User\config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

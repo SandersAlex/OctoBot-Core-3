@@ -1,0 +1,6 @@
+{
+	"Paths": {
+		"Core": "core.json",
+		"Logging": "logging.json"
+	}
+}
