@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <OutputPath>D:\CSharp\Git Rebuilds\OctoBot\OctoBot\bin\Debug\netcoreapp3.1\Tentacles\Trading\Mode\</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\OctoBot.Tradings\OctoBot.Tradings.csproj" />
+	  <ProjectReference Include="..\OctoBot.Tentacles.DailyTradingMode\OctoBot.Tentacles.DailyTradingMode.csproj" />
+	</ItemGroup>
+
+</Project>

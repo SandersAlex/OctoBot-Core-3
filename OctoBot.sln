@@ -75,25 +75,49 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.MomentumT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.TrendTAEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.TrendTAEvaluator\OctoBot.Tentacles.TrendTAEvaluator.csproj", "{B7214B69-4D42-45E8-B828-A600352E742B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.VolatilityTAEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.VolatilityTAEvaluator\OctoBot.Tentacles.VolatilityTAEvaluator.csproj", "{79D8A710-667A-4CFD-89A3-3EBFAB3A053C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.VolatilityTAEvaluator", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.VolatilityTAEvaluator\OctoBot.Tentacles.VolatilityTAEvaluator.csproj", "{79D8A710-667A-4CFD-89A3-3EBFAB3A053C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Util", "Util", "{480C1272-2C5F-443A-A58A-D45F46270D5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.OverallStateAnalysis", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.OverallStateAnalysis\OctoBot.Tentacles.OverallStateAnalysis.csproj", "{06250622-6401-4F6C-8DEF-029B79839F07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.OverallStateAnalysis", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.OverallStateAnalysis\OctoBot.Tentacles.OverallStateAnalysis.csproj", "{06250622-6401-4F6C-8DEF-029B79839F07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.PatternAnalysis", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.PatternAnalysis\OctoBot.Tentacles.PatternAnalysis.csproj", "{DCD061FE-46D9-4F6E-9334-0E1C06FB143A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.PatternAnalysis", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.PatternAnalysis\OctoBot.Tentacles.PatternAnalysis.csproj", "{DCD061FE-46D9-4F6E-9334-0E1C06FB143A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.StatisticsAnalysis", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.StatisticsAnalysis\OctoBot.Tentacles.StatisticsAnalysis.csproj", "{A5A344E0-C429-44EE-AA3F-F0884F668EE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.StatisticsAnalysis", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.StatisticsAnalysis\OctoBot.Tentacles.StatisticsAnalysis.csproj", "{A5A344E0-C429-44EE-AA3F-F0884F668EE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.TextAnalysis", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.TextAnalysis\OctoBot.Tentacles.TextAnalysis.csproj", "{904DF3A4-EDF4-427D-95ED-17CE2283106E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.TextAnalysis", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.TextAnalysis\OctoBot.Tentacles.TextAnalysis.csproj", "{904DF3A4-EDF4-427D-95ED-17CE2283106E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.TrendAnalysis", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.TrendAnalysis\OctoBot.Tentacles.TrendAnalysis.csproj", "{6033F8C1-D484-415B-A92F-D7E05B5123A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.TrendAnalysis", "OctoBot.Tentacles.Libs\OctoBot.Tentacles.TrendAnalysis\OctoBot.Tentacles.TrendAnalysis.csproj", "{6033F8C1-D484-415B-A92F-D7E05B5123A5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Trading", "Trading", "{DF91784B-1020-4C6C-8D0C-0C5B8D476061}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mode", "Mode", "{76336054-4E54-4396-9A08-19FB868D300F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tradings", "OctoBot.Tradings\OctoBot.Tradings.csproj", "{84588670-C0F9-4C9C-AAE5-A1DE5E87497D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tradings", "OctoBot.Tradings\OctoBot.Tradings.csproj", "{84588670-C0F9-4C9C-AAE5-A1DE5E87497D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.DailyTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.DailyTradingMode\OctoBot.Tentacles.DailyTradingMode.csproj", "{33259B78-FE66-4C95-88C0-4B6C242CDAC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.DipAnalyserTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.DipAnalyserTradingMode\OctoBot.Tentacles.DipAnalyserTradingMode.csproj", "{8D7E30C5-3DEF-4F0D-8B00-99E47AD07B6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OctoBot.Tentacles.HighFrequencyTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.HighFrequencyTradingMode\OctoBot.Tentacles.HighFrequencyTradingMode.csproj", "{DDE4C2F6-26A9-4280-9091-9D10DDDDD113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.HybridTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.HybridTradingMode\OctoBot.Tentacles.HybridTradingMode.csproj", "{0AC6E9F4-611E-4592-9199-039739710FA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.InvestorTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.InvestorTradingMode\OctoBot.Tentacles.InvestorTradingMode.csproj", "{A457B649-0D3F-469A-B5B0-6304D46C2799}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.MarketMakerTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.MarketMakerTradingMode\OctoBot.Tentacles.MarketMakerTradingMode.csproj", "{F339BAEE-F141-4D2D-91D3-4E8BAB81B78F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.ObjectiveTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.ObjectiveTradingMode\OctoBot.Tentacles.ObjectiveTradingMode.csproj", "{545B4715-EB90-4056-8BA0-EE9D8D15B31E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.OpportunityTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.OpportunityTradingMode\OctoBot.Tentacles.OpportunityTradingMode.csproj", "{89C55F35-044E-48CF-A8BE-7BE39E2643AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.SafeProfitTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.SafeProfitTradingMode\OctoBot.Tentacles.SafeProfitTradingMode.csproj", "{16157E50-0CCE-4AEC-B8B5-EDD261A20F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.SignalTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.SignalTradingMode\OctoBot.Tentacles.SignalTradingMode.csproj", "{C8C3D95D-3955-4B5B-B35F-3AE5AAB73AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.SimpleTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.SimpleTradingMode\OctoBot.Tentacles.SimpleTradingMode.csproj", "{39C73A1B-4C72-4B82-A446-1FE0A31EAAAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tentacles.StaggeredOrdersTradingMode", "OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.StaggeredOrdersTradingMode\OctoBot.Tentacles.StaggeredOrdersTradingMode.csproj", "{80392F48-8A72-43A7-BD5C-352E72CE3741}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -241,6 +265,54 @@ Global
 		{84588670-C0F9-4C9C-AAE5-A1DE5E87497D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84588670-C0F9-4C9C-AAE5-A1DE5E87497D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84588670-C0F9-4C9C-AAE5-A1DE5E87497D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33259B78-FE66-4C95-88C0-4B6C242CDAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33259B78-FE66-4C95-88C0-4B6C242CDAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33259B78-FE66-4C95-88C0-4B6C242CDAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33259B78-FE66-4C95-88C0-4B6C242CDAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7E30C5-3DEF-4F0D-8B00-99E47AD07B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7E30C5-3DEF-4F0D-8B00-99E47AD07B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7E30C5-3DEF-4F0D-8B00-99E47AD07B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7E30C5-3DEF-4F0D-8B00-99E47AD07B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE4C2F6-26A9-4280-9091-9D10DDDDD113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE4C2F6-26A9-4280-9091-9D10DDDDD113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE4C2F6-26A9-4280-9091-9D10DDDDD113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE4C2F6-26A9-4280-9091-9D10DDDDD113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC6E9F4-611E-4592-9199-039739710FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC6E9F4-611E-4592-9199-039739710FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC6E9F4-611E-4592-9199-039739710FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC6E9F4-611E-4592-9199-039739710FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A457B649-0D3F-469A-B5B0-6304D46C2799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A457B649-0D3F-469A-B5B0-6304D46C2799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A457B649-0D3F-469A-B5B0-6304D46C2799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A457B649-0D3F-469A-B5B0-6304D46C2799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F339BAEE-F141-4D2D-91D3-4E8BAB81B78F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F339BAEE-F141-4D2D-91D3-4E8BAB81B78F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F339BAEE-F141-4D2D-91D3-4E8BAB81B78F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F339BAEE-F141-4D2D-91D3-4E8BAB81B78F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{545B4715-EB90-4056-8BA0-EE9D8D15B31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{545B4715-EB90-4056-8BA0-EE9D8D15B31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{545B4715-EB90-4056-8BA0-EE9D8D15B31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{545B4715-EB90-4056-8BA0-EE9D8D15B31E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C55F35-044E-48CF-A8BE-7BE39E2643AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C55F35-044E-48CF-A8BE-7BE39E2643AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C55F35-044E-48CF-A8BE-7BE39E2643AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C55F35-044E-48CF-A8BE-7BE39E2643AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16157E50-0CCE-4AEC-B8B5-EDD261A20F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16157E50-0CCE-4AEC-B8B5-EDD261A20F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16157E50-0CCE-4AEC-B8B5-EDD261A20F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16157E50-0CCE-4AEC-B8B5-EDD261A20F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C3D95D-3955-4B5B-B35F-3AE5AAB73AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C3D95D-3955-4B5B-B35F-3AE5AAB73AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C3D95D-3955-4B5B-B35F-3AE5AAB73AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C3D95D-3955-4B5B-B35F-3AE5AAB73AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39C73A1B-4C72-4B82-A446-1FE0A31EAAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39C73A1B-4C72-4B82-A446-1FE0A31EAAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39C73A1B-4C72-4B82-A446-1FE0A31EAAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39C73A1B-4C72-4B82-A446-1FE0A31EAAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80392F48-8A72-43A7-BD5C-352E72CE3741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80392F48-8A72-43A7-BD5C-352E72CE3741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80392F48-8A72-43A7-BD5C-352E72CE3741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80392F48-8A72-43A7-BD5C-352E72CE3741}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -280,6 +352,18 @@ Global
 		{6033F8C1-D484-415B-A92F-D7E05B5123A5} = {480C1272-2C5F-443A-A58A-D45F46270D5C}
 		{DF91784B-1020-4C6C-8D0C-0C5B8D476061} = {78BE2E5D-7F21-46D4-8C3A-D752C7038E32}
 		{76336054-4E54-4396-9A08-19FB868D300F} = {DF91784B-1020-4C6C-8D0C-0C5B8D476061}
+		{33259B78-FE66-4C95-88C0-4B6C242CDAC7} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{8D7E30C5-3DEF-4F0D-8B00-99E47AD07B6B} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{DDE4C2F6-26A9-4280-9091-9D10DDDDD113} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{0AC6E9F4-611E-4592-9199-039739710FA8} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{A457B649-0D3F-469A-B5B0-6304D46C2799} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{F339BAEE-F141-4D2D-91D3-4E8BAB81B78F} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{545B4715-EB90-4056-8BA0-EE9D8D15B31E} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{89C55F35-044E-48CF-A8BE-7BE39E2643AA} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{16157E50-0CCE-4AEC-B8B5-EDD261A20F54} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{C8C3D95D-3955-4B5B-B35F-3AE5AAB73AC8} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{39C73A1B-4C72-4B82-A446-1FE0A31EAAAE} = {76336054-4E54-4396-9A08-19FB868D300F}
+		{80392F48-8A72-43A7-BD5C-352E72CE3741} = {76336054-4E54-4396-9A08-19FB868D300F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A9A7206C-B3E7-462E-9C7F-27E3BE253AB2}

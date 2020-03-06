@@ -42,6 +42,16 @@
     <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.TrendAnalysis\OctoBot.Tentacles.TrendAnalysis.csproj" />
     <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.TrendTAEvaluator\OctoBot.Tentacles.TrendTAEvaluator.csproj" />
     <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.VolatilityTAEvaluator\OctoBot.Tentacles.VolatilityTAEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.DailyTradingMode\OctoBot.Tentacles.DailyTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.DipAnalyserTradingMode\OctoBot.Tentacles.DipAnalyserTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.HighFrequencyTradingMode\OctoBot.Tentacles.HighFrequencyTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.HybridTradingMode\OctoBot.Tentacles.HybridTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.InvestorTradingMode\OctoBot.Tentacles.InvestorTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.MarketMakerTradingMode\OctoBot.Tentacles.MarketMakerTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.ObjectiveTradingMode\OctoBot.Tentacles.ObjectiveTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.OpportunityTradingMode\OctoBot.Tentacles.OpportunityTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.SafeProfitTradingMode\OctoBot.Tentacles.SafeProfitTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.SignalTradingMode\OctoBot.Tentacles.SignalTradingMode.csproj" />
     <ProjectReference Include="..\OctoBot.Tentacles.Manager\OctoBot.Tentacles.Manager.csproj" />
     <ProjectReference Include="..\OctoBot.Tentacles\OctoBot.Tentacles.csproj" />
     <ProjectReference Include="..\OctoBot.Tradings\OctoBot.Tradings.csproj" />
