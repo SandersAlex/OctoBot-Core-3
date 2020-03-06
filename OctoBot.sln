@@ -93,6 +93,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Trading", "Trading", "{DF91
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mode", "Mode", "{76336054-4E54-4396-9A08-19FB868D300F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoBot.Tradings", "OctoBot.Tradings\OctoBot.Tradings.csproj", "{84588670-C0F9-4C9C-AAE5-A1DE5E87497D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -235,6 +237,10 @@ Global
 		{6033F8C1-D484-415B-A92F-D7E05B5123A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6033F8C1-D484-415B-A92F-D7E05B5123A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6033F8C1-D484-415B-A92F-D7E05B5123A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84588670-C0F9-4C9C-AAE5-A1DE5E87497D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84588670-C0F9-4C9C-AAE5-A1DE5E87497D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84588670-C0F9-4C9C-AAE5-A1DE5E87497D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84588670-C0F9-4C9C-AAE5-A1DE5E87497D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
