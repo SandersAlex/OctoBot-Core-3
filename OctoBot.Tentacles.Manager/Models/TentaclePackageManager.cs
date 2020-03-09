@@ -10,6 +10,7 @@ using OctoBot.Evaluator.Social;
 using OctoBot.Evaluator.Strategies;
 using OctoBot.Evaluator.TA;
 using Serilog.Core;
+using OctoBot.Tradings;
 
 namespace OctoBot.Tentacles.Manager
 {
@@ -394,14 +395,23 @@ namespace OctoBot.Tentacles.Manager
 			{
 				LogConfigFileUpdateException(exc.Message);
 			}
-
-			Debug.WriteLine(1);
 		}
-		public void UpdateTradingConfigFile(object tradingConfigFile = null)
+		public void UpdateTradingConfigFile(string tradingConfigFile = "")
 		{
-			//if (tradingConfigFile == null) tradingConfigFile = CONFIG_TRADING_FILE_PATH;
+			if (tradingConfigFile == "") tradingConfigFile = TentaclesManagerVars.CONFIG_TRADING_FILE_PATH;
 
-			Debug.WriteLine(1);
+			try
+			{
+				loggingService.Info($"Обновляю {tradingConfigFile} используя новые данные...");
+
+				List<Type> tradingModesInConfig = new List<Type>() { typeof(AbstractTradingMode) };
+
+				TentaclePackageUtil.UpdateConfigFile(tradingConfigFile, TentaclesManagerVars.CONFIG_DEFAULT_TRADING_FILE, tradingModesInConfig);
+			}
+			catch (Exception exc)
+			{
+				LogConfigFileUpdateException(exc.Message);
+			}
 		}
 	}
 }

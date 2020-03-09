@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\OctoBot.Core\OctoBot.Core.csproj" />
     <ProjectReference Include="..\OctoBot.Evaluators\OctoBot.Evaluators.csproj" />
+    <ProjectReference Include="..\OctoBot.Tradings\OctoBot.Tradings.csproj" />
     <ProjectReference Include="..\OctoBot.Utils\OctoBot.Utils.csproj" />
     <ProjectReference Include="..\OctoBot.Vars\OctoBot.Vars.csproj" />
   </ItemGroup>

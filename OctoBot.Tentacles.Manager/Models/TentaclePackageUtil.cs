@@ -156,7 +156,7 @@ namespace OctoBot.Tentacles.Manager
 		public static void UpdateConfigFile(string configFilePath, string defaultFilePath, List<Type> classesToConsider)
 		{
 			// initialize file content
-			Dictionary<string, object> configContent = new Dictionary<string, object>();
+			Dictionary<string, bool> configContent = new Dictionary<string, bool>();
 			bool changedSomething = false;
 			string defaultConfigFileContent = "";
 
@@ -181,25 +181,61 @@ namespace OctoBot.Tentacles.Manager
 				Debug.WriteLine(1);
 			}
 
-			List<object> classesList = new List<object>();
+			List<Type> classesList = new List<Type>();
 			// add items using their base class key (vs advances classes)
 			foreach (var classesInConfig in classesToConsider)
 			{
 				changedSomething = AddClassToConfigFileContent(classesInConfig, configContent, classesList) || changedSomething;
 			}
 
-			Debug.WriteLine(1);
+			// remove potential unnecessary items
+			List<string> toRemove = new List<string>();
+			List<string> strClassesList = new List<string>();
+			foreach (var c in classesList)
+			{
+				strClassesList.Add(c.Name);
+			}
+
+			foreach (var key in configContent.Keys)
+			{
+				if (strClassesList.Contains(key) == false) toRemove.Add(key);
+			}
+
+			foreach (var keyToRemove in toRemove)
+			{
+				configContent.Remove(keyToRemove);
+				changedSomething = true;
+			}
+
+			var loggingService = Application.Resolve<ILoggingService>();
+			if (changedSomething == true)
+			{
+				loggingService.Info($"Был обновлен {configFilePath}...");
+			}
+			else
+			{
+				loggingService.Info($"Нечего обновлять в {configFilePath}...");
+			}
 		}
-		public static bool AddClassToConfigFileContent(Type clazz, Dictionary<string, object> configFileContent, List<object> classesList, bool activated = false)
+		public static bool AddClassToConfigFileContent(Type clazz, Dictionary<string, bool> configFileContent, List<Type> classesList, bool activated = false)
 		{
 			//bool useFirst = TentacleUtil.IsFirstVersionSuperior(ConfigVars.SHORT_VERSION, TentaclesManagerVars.OCTOBOT_ADV_MNG_IMPORT_CHANGE_VERSION, orEqual: true);
 
 			bool changedSomething = false;
-			var currentClassesList = AdvancedManager.CreateDefaultTypesList(clazz);
+			List<Type> currentClassesList = AdvancedManager.CreateDefaultTypesList(clazz);
 
-			Debug.WriteLine(1);
+			foreach (Type currentClass in currentClassesList)
+			{
+				if (configFileContent.ContainsKey(currentClass.Name) == false)
+				{
+					configFileContent[currentClass.Name] = activated;
+					changedSomething = true;
+				}
+			}
 
-			return false;
+			classesList.AddRange(currentClassesList);
+
+			return changedSomething;
 		}
 
 		public static Task<string> TaskGetPackageFileContentFromUrl(string url, string contentType = "")

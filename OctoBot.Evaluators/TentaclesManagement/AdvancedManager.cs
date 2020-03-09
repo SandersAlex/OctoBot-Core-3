@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace OctoBot.TentaclesManagement
@@ -12,9 +14,9 @@ namespace OctoBot.TentaclesManagement
 		/// Returns True if it is an abstract one else False. """
 		/// </summary>
 		/// <param name="class_type"></param>
-		private static void IsAbstract(object class_type)
+		private static bool IsAbstract(Type classType)
 		{
-			Debug.WriteLine(1);
+			return classType.IsAbstract;
 		}
 		/// <summary>
 		/// """ get_advanced will get each subclasses of the parameter class_type
@@ -68,13 +70,26 @@ namespace OctoBot.TentaclesManagement
 		{
 			Debug.WriteLine(1);
 		}
-		public static object CreateDefaultTypesList(Type clazz)
+		public static List<Type> CreateDefaultTypesList(Type clazz)
 		{
-			List<object> defaultClassList = new List<object>();
+			List<Type> defaultClassList = new List<Type>();
+			var mainClasses = FindDerivedTypes(clazz);
 
-			Debug.WriteLine(1);
+			foreach (var currentSubclass in mainClasses)
+			{
+				var subClasses = FindDerivedTypes(currentSubclass);
 
-			return null;
+				if (subClasses.Count() > 0)
+				{
+					foreach (var currentClass in subClasses) defaultClassList.Add(currentClass);
+				}
+				else
+				{
+					if (AdvancedManager.IsAbstract(currentSubclass) == false) defaultClassList.Add(currentSubclass);
+				}
+			}
+
+			return defaultClassList;
 		}
 		private static void CreateAdvancedEvaluatorTypesList(object evaluator_class, object config)
 		{
@@ -87,6 +102,20 @@ namespace OctoBot.TentaclesManagement
 		private static void CheckDuplicate(object list_to_check)
 		{
 			Debug.WriteLine(1);
+		}
+		public static IEnumerable<Type> FindDerivedTypes(Type baseType)
+		{
+			Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
+			List<Type> types = new List<Type>();
+
+			foreach (var assembly in assemblies)
+			{
+				//var enumTypes = assembly.GetTypes().Where(t => t != baseType && baseType.IsAssignableFrom(t));
+				var enumTypes = assembly.GetTypes().Where(t => t.IsSubclassOf(baseType));
+				types.AddRange(enumTypes);
+			}
+
+			return types;
 		}
 	}
 }
