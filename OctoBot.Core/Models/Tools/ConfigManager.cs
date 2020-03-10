@@ -5,6 +5,7 @@ using System.Text;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
 using OctoBot.Config;
+using OctoBot.Core;
 using OctoBot.Utils;
 using Serilog.Core;
 
@@ -140,9 +141,10 @@ namespace OctoBot.Tools
 		{
 			Debug.WriteLine(1);
 		}
-		public static void IsInDevMode(object config)
+		public static bool IsInDevMode(ICoreConfig config)
 		{
-			Debug.WriteLine(1);
+			// return True если "DEV-MODE": true в config.json
+			return (bool)config.DevMode;
 		}
 		public static void UpdateEvaluatorConfig(object toUpdateData, object currentConfig, object deactivateOthers)
 		{
@@ -236,9 +238,9 @@ namespace OctoBot.Tools
 		{
 			Debug.WriteLine(1);
 		}
-		public static void AcceptedTerms(object config)
+		public static bool AcceptedTerms(ICoreConfig config)
 		{
-			Debug.WriteLine(1);
+			return config.AcceptedTerms;
 		}
 		public static void AcceptTerms(object config, object accepted)
 		{

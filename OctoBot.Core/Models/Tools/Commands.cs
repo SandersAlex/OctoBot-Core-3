@@ -51,11 +51,28 @@ namespace OctoBot.Tools
 		{
 			Debug.WriteLine(1);
 		}
-		public static async void StartBot(object bot, object logger, bool useCatch = false)
+		public static async void StartBot(Core.OctoBot bot, bool useCatch = false)
 		{
-			Debug.WriteLine(1);
+			ILoggingService loggingService = Application.Resolve<ILoggingService>();
+
+			try
+			{
+				// Запуск
+				await bot.Initialize();
+				await bot.Start();
+
+				Debug.WriteLine(1);
+			}
+			catch (Exception exc)
+			{
+				loggingService.Fatal($"OctoBot Exception : {exc.Message}");
+
+				if (useCatch == false) throw new Exception(exc.Message);
+
+				Commands.StopBot(bot);
+			}
 		}
-		public static void StopBot(object bot)
+		public static void StopBot(Core.OctoBot bot)
 		{
 			Debug.WriteLine(1);
 		}

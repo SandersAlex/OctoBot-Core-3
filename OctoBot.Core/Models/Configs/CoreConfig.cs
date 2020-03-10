@@ -12,21 +12,38 @@ namespace OctoBot.Core
 		public bool SaveEvaluations { get; set; }
 		public bool PerformanceAnalyser { get; set; }
 		public bool AcceptedTerms { get; set; }
-		public Backtesting Backtesting { get; set; } = new Backtesting();
-		public Dictionary<string, PairsList> CryptoCurrencies { get; set; } = new Dictionary<string, PairsList>();
-		public Dictionary<string, Exchange> Exchanges { get; set; } = new Dictionary<string, Exchange>();
-		public DataCollector DataCollector { get; set; } = new DataCollector();
-		public Metrics Metrics { get; set; } = new Metrics();
-		public Notification Notification { get; set; } = new Notification();
-		public Dictionary<string, object> Services { get; set; } = new Dictionary<string, object>();
+		public Backtesting Backtesting { get; set; }
+		public Dictionary<string, PairsList> CryptoCurrencies { get; set; }
+		public Dictionary<string, Exchange> Exchanges { get; set; }
+		public DataCollector DataCollector { get; set; }
+		public Metrics Metrics { get; set; }
+		public Notification Notification { get; set; }
+		public Dictionary<string, object> Services { get; set; }
 		public List<string>? TentaclesPackages { get; set; }
-		public Trader Trader { get; set; } = new Trader();
-		public TraderSimulator TraderSimulator { get; set; } = new TraderSimulator();
-		public Trading Trading { get; set; } = new Trading();
-		public List<string> WatchedSymbols { get; set; } = new List<string>();
+		public Trader Trader { get; set; }
+		public TraderSimulator TraderSimulator { get; set; }
+		public Trading Trading { get; set; }
+		public List<string> WatchedSymbols { get; set; }
+
+		public CoreConfig()
+		{
+			Backtesting = new Backtesting();
+			CryptoCurrencies = new Dictionary<string, PairsList>();
+			Exchanges = new Dictionary<string, Exchange>();
+			DataCollector = new DataCollector();
+			Metrics = new Metrics();
+			Notification = new Notification();
+			Services = new Dictionary<string, object>();
+			Trader = new Trader();
+			TraderSimulator = new TraderSimulator();
+			Trading = new Trading();
+			WatchedSymbols = new List<string>();
+		}
 	}
 	public class Backtesting
 	{
+		public bool PostAnalysisEnabled { get; set; }
+		public bool Enabled { get; set; }
 		public List<string> Files { get; set; } = new List<string>();
 	}
 	public class PairsList
@@ -45,6 +62,7 @@ namespace OctoBot.Core
 	}
 	public class Notification
 	{
+		public bool Enabled { get; set; }
 		public bool GlobalInfo { get; set; }
 		public bool PriceAlerts { get; set; }
 		public bool Trades { get; set; }
