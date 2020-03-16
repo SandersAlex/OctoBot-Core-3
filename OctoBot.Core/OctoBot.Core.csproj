@@ -4,6 +4,15 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ContentWithTargetPath Include="Models\Config\config_paths.json" />
+	</ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Autofac" Version="5.1.2" />
     <PackageReference Include="CompareNETObjects" Version="4.65.0" />
@@ -23,10 +32,35 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OctoBot.Evaluators\OctoBot.Evaluators.csproj" />
-    <ProjectReference Include="..\OctoBot.Utils\OctoBot.Utils.csproj" />
-    <ProjectReference Include="..\OctoBot.Vars\OctoBot.Vars.csproj" />
     <ProjectReference Include="..\Python Libs\ArgParse\ArgParse.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Models\Config\config_paths.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		 <Link>Config\config_paths.json</Link>
+    </None>
+    <None Update="Models\Config\config_schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Models\Config\core.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		 <Link>Config\core.json</Link>
+    </None>
+    <None Update="Models\Config\default_config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Models\Config\logging.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		 <Link>Config\logging.json</Link>
+    </None>
+    <None Update="Models\Config\tentacles_list.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		 <Link>Config\tentacles_list.json</Link>
+    </None>
+    <None Update="User\config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

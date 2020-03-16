@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace OctoBot.Core
 {
@@ -44,7 +45,7 @@ namespace OctoBot.Core
 			AvailableExchanges = new List<string>() { "binance" };
 		}
 
-		async private void Create()
+		async public Task Create()
 		{
 			Debug.WriteLine(1);
 		}

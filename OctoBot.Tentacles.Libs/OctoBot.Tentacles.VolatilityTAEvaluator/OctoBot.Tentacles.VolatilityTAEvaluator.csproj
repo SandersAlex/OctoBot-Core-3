@@ -10,11 +10,11 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-	  <OutputPath>D:\CSharp\Git Rebuilds\OctoBot\OctoBot\bin\Debug\netcoreapp3.1\Tentacles\Evaluator\TA\</OutputPath>
+	  <OutputPath>D:\CSharp\Git Rebuilds\OctoBot\OctoBot\bin\Debug\Tentacles\Evaluator\TA\</OutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\OctoBot.Evaluators\OctoBot.Evaluators.csproj" />
+	  <ProjectReference Include="..\..\OctoBot.Core\OctoBot.Core.csproj" />
 	</ItemGroup>
 
 </Project>

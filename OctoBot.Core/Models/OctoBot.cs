@@ -64,7 +64,10 @@ namespace OctoBot.Core
 
 		async public Task Initialize()
 		{
-			Debug.WriteLine(1);
+			await Initializer.Create();
+			TaskManager.InitAsyncLoop();
+			await ExchangeFactory.Create();
+			EvaluatorFactory.Create();
 		}
 		async public Task Start(bool runInNewThread = false)
 		{
@@ -130,9 +133,9 @@ namespace OctoBot.Core
 		{
 			return TaskManager.Ready;
 		}
-		private void GetConfig()
+		public ICoreConfig GetConfig()
 		{
-			Debug.WriteLine(1);
+			return Config;
 		}
 		private void GetTools()
 		{

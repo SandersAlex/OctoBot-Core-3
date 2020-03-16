@@ -37,7 +37,7 @@ namespace OctoBot.Core
 			RealTimeEvalTasks = new List<object>();
 		}
 
-		private void Create()
+		public void Create()
 		{
 			Debug.WriteLine(1);
 		}

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
-using OctoBot.AppServices;
+using OctoBot.Evaluator;
 using OctoBot.Evaluator.Social;
 
 namespace OctoBot.Tentacles

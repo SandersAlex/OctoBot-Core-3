@@ -24,5 +24,6 @@ namespace OctoBot.Core
 		TraderSimulator TraderSimulator { get; }
 		Trading Trading { get; }
 		List<string> WatchedSymbols { get; }
+		object AdvancedClasses { get; }
 	}
 }

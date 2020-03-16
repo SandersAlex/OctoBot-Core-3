@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Text;
 using OctoBot.Tradings;
 
-namespace OctoBot.Tentacles.SimpleTradingMode
+namespace OctoBot.Tentacles
 {
 	public class SimpleTradingModeDecider : AbstractTradingModeDecider
 	{

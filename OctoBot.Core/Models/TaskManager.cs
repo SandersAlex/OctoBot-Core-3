@@ -34,7 +34,7 @@ namespace OctoBot.Core
 			CurrentLoopThread = null;
 		}
 
-		private void InitAsyncLoop()
+		public void InitAsyncLoop()
 		{
 			Debug.WriteLine(1);
 		}

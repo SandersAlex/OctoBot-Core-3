@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using OctoBot.Core;
 
 namespace OctoBot.TentaclesManagement
 {
@@ -42,9 +43,12 @@ namespace OctoBot.TentaclesManagement
 		{
 			Debug.WriteLine(1);
 		}
-		private static void InitAdvancedClassesIfNecessary(object config)
+		public static void InitAdvancedClassesIfNecessary(ICoreConfig config)
 		{
-			Debug.WriteLine(1);
+			if (config.AdvancedClasses != null)
+			{
+				Debug.WriteLine(1);
+			}
 		}
 		private static void GetAdvancedClassesList(object config)
 		{

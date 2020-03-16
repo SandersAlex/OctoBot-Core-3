@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using System.Threading.Tasks;
+using OctoBot.TentaclesManagement;
 
 namespace OctoBot.Core
 {
@@ -30,13 +32,20 @@ namespace OctoBot.Core
 			RelevantEvaluators = new List<object>();
 		}
 
-		async private void Create()
+		async public Task Create()
 		{
+			// подготовить расширенные классы, если таковые имеются
+			ManageAdvancedClasses();
+
+			// управление временными интервалами
+			InitTimeFrames();
+
 			Debug.WriteLine(1);
 		}
 		private void ManageAdvancedClasses()
 		{
-			Debug.WriteLine(1);
+			var service = Application.Resolve<ITentacleManagerService>();
+			service.ManageAdvancedClasses(Octobot);
 		}
 		private void InitRelevantEvaluators()
 		{
@@ -52,6 +61,9 @@ namespace OctoBot.Core
 		}
 		private void InitTimeFrames()
 		{
+			// Инициализация временных интервалов с использованием включенных стратегий
+			//EvaluatorCreator.InitTimeFramesFromStrategies(Octobot.GetConfig());
+
 			Debug.WriteLine(1);
 		}
 		async private void CreateServices()

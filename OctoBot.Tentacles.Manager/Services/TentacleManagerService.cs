@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using OctoBot.Core;
+using OctoBot.TentaclesManagement;
 
 namespace OctoBot.Tentacles.Manager
 {
@@ -22,6 +23,10 @@ namespace OctoBot.Tentacles.Manager
 		public bool TentaclesArchExists()
 		{
 			return TentacleUtil.TentaclesArchExists();
+		}
+		public void ManageAdvancedClasses(Core.OctoBot octobot)
+		{
+			AdvancedManager.InitAdvancedClassesIfNecessary(octobot.GetConfig());
 		}
 	}
 }
