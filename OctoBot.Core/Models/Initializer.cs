@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
+using OctoBot.Evaluator;
 using OctoBot.TentaclesManagement;
 
 namespace OctoBot.Core
@@ -44,8 +45,7 @@ namespace OctoBot.Core
 		}
 		private void ManageAdvancedClasses()
 		{
-			var service = Application.Resolve<ITentacleManagerService>();
-			service.ManageAdvancedClasses(Octobot);
+			AdvancedManager.InitAdvancedClassesIfNecessary(Octobot.GetConfig());
 		}
 		private void InitRelevantEvaluators()
 		{
@@ -62,7 +62,7 @@ namespace OctoBot.Core
 		private void InitTimeFrames()
 		{
 			// Инициализация временных интервалов с использованием включенных стратегий
-			//EvaluatorCreator.InitTimeFramesFromStrategies(Octobot.GetConfig());
+			EvaluatorCreator.InitTimeFramesFromStrategies(Octobot.GetConfig());
 
 			Debug.WriteLine(1);
 		}

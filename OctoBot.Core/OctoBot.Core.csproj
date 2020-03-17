@@ -41,14 +41,14 @@
 		 <Link>Config\config_paths.json</Link>
     </None>
     <None Update="Models\Config\config_schema.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="Models\Config\core.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		 <Link>Config\core.json</Link>
     </None>
     <None Update="Models\Config\default_config.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="Models\Config\logging.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

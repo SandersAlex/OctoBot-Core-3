@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using OctoBot.Core;
 using OctoBot.TentaclesManagement;
 
 namespace OctoBot.Evaluator
 {
-	public abstract class AbstractEvaluator : AbstractTentacle
+	public abstract class AbstractEvaluator : AbstractTentacle, IAbstractEvaluator
 	{
 		public AbstractEvaluator()
 		{
@@ -146,9 +147,16 @@ namespace OctoBot.Evaluator
 		{
 			Debug.WriteLine(1);
 		}
-		private void IsEnabled(object cls, object config, object defaultObject)
+		public bool IsEnabled(Type cls, ICoreConfig config, bool defaultObject)
 		{
+			if (config.Evaluator.Count > 0)
+			{
+
+			}
+
 			Debug.WriteLine(1);
+
+			return false;
 		}
 		private void SaveEvaluationExpirationTime(object eval_note_time_to_live, object eval_note_changed_time = null)
 		{

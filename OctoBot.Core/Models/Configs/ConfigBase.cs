@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 using Newtonsoft.Json.Linq;
+using OctoBot.Core;
 using OctoBot.Tools;
 using OctoBot.Utils;
 using Serilog.Core;
@@ -16,7 +17,7 @@ namespace OctoBot.Config
 		{
 			return Path.Combine(ConfigVars.USER_FOLDER, ConfigVars.CONFIG_FILE);
 		}
-		public static ConfigJson LoadConfig(Logger logger, string configFile = "", bool error = true, bool fillMissingFields = false)
+		public static ConfigJson LoadConfig(string configFile = "", bool error = true, bool fillMissingFields = false)
 		{
 			if (configFile == "") configFile = GetUserConfig();
 
@@ -34,6 +35,7 @@ namespace OctoBot.Config
 			{
 				string errorStr = String.Format("{0} : ошибка открытия файла ({1})", basicError, exc.Message);
 
+				var logger = Application.Resolve<ILoggingService>();
 				logger.Error(errorStr);
 			}
 			catch (Exception exc)
@@ -73,20 +75,21 @@ namespace OctoBot.Config
 		{
 			Debug.WriteLine(1);
 		}
-		public static void FillMissingConfigFields(Logger logger, ConfigJson config, string referenceConfigFile = "")
+		public static void FillMissingConfigFields(ConfigJson config, string referenceConfigFile = "")
 		{
 			if (referenceConfigFile == "") referenceConfigFile = ConfigVars.DEFAULT_CONFIG_FILE;
 
 			try
 			{
-				ConfigJson defaultConfig = LoadConfig(logger, referenceConfigFile);
+				ConfigJson defaultConfig = LoadConfig(referenceConfigFile);
 
 				List<string> exceptionList = new List<string>() { ConfigVars.CONFIG_CRYPTO_CURRENCIES, ConfigVars.CONFIG_STARTING_PORTFOLIO, ConfigVars.CONFIG_EXCHANGES, ConfigVars.CONFIG_CATEGORY_SERVICES };
 
-				DictUtil.CheckAndMergeValuesFromReference(config, defaultConfig, exceptionList, logger);
+				DictUtil.CheckAndMergeValuesFromReference(config, defaultConfig, exceptionList);
 			}
 			catch (Exception exc)
 			{
+				var logger = Application.Resolve<ILoggingService>();
 				logger.Warning($"Невозможно проверить целостность файла конфигурации ({exc.Message})");
 			}
 		}

@@ -24,9 +24,5 @@ namespace OctoBot.Tentacles.Manager
 		{
 			return TentacleUtil.TentaclesArchExists();
 		}
-		public void ManageAdvancedClasses(Core.OctoBot octobot)
-		{
-			AdvancedManager.InitAdvancedClassesIfNecessary(octobot.GetConfig());
-		}
 	}
 }

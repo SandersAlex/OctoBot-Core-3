@@ -45,14 +45,14 @@ namespace OctoBot.TentaclesManagement
 		}
 		public static void InitAdvancedClassesIfNecessary(ICoreConfig config)
 		{
-			if (config.AdvancedClasses != null)
+			if (config.AdvancedClasses.Count > 0)
 			{
 				Debug.WriteLine(1);
 			}
 		}
-		private static void GetAdvancedClassesList(object config)
+		private static Dictionary<string, object> GetAdvancedClassesList(ICoreConfig config)
 		{
-			Debug.WriteLine(1);
+			return config.AdvancedClasses;
 		}
 		private static void GetAdvancedInstancesList(object config)
 		{
@@ -62,9 +62,22 @@ namespace OctoBot.TentaclesManagement
 		{
 			Debug.WriteLine(1);
 		}
-		private static void GetClasses(object config, object class_type, bool get_all_classes = false)
+		private static List<Type> GetClasses(ICoreConfig config, Type classType, bool getAllClasses = false)
 		{
-			Debug.WriteLine(1);
+			List<Type> classes = new List<Type>();
+
+			if (AdvancedManager.GetAdvancedClassesList(config).ContainsKey(classType.Name) == true)
+			{
+				//classes = copy(AdvancedManager._get_advanced_classes_list(config)[class_type.get_name()])
+				Debug.WriteLine(1);
+			}
+
+			if (classes.Count == 0 || (getAllClasses == true && classes.Contains(classType) == false))
+			{
+				classes.Add(classType);
+			}
+
+			return classes;
 		}
 		private static void GetClass(object config, object class_type)
 		{
@@ -95,17 +108,39 @@ namespace OctoBot.TentaclesManagement
 
 			return defaultClassList;
 		}
-		private static void CreateAdvancedEvaluatorTypesList(object evaluator_class, object config)
+		public static List<Type> CreateAdvancedEvaluatorTypesList(Type evaluatorClass, ICoreConfig config)
 		{
-			Debug.WriteLine(1);
+			List<Type> evaluatorAdvancedEvalClassList = new List<Type>();
+
+			IEnumerable<Type> lstEvaluatorClass = FindDerivedTypes(evaluatorClass);
+
+			foreach (Type evaluatorSubclass in lstEvaluatorClass)
+			{
+				IEnumerable<Type> lstEvaluatorSubclass = FindDerivedTypes(evaluatorSubclass);
+				foreach (Type evalClass in lstEvaluatorSubclass)
+				{
+					foreach (Type evalClassType in AdvancedManager.GetClasses(config, evalClass))
+					{
+						evaluatorAdvancedEvalClassList.Add(evalClassType);
+					}
+				}
+			}
+
+			if (AdvancedManager.CheckDuplicate(evaluatorAdvancedEvalClassList) == false)
+			{
+				var logger = Application.Resolve<ILoggingService>();
+				logger.Warning("Дубликат имени evaluator");
+			}
+
+			return evaluatorAdvancedEvalClassList;
 		}
 		private static void GetAllClasses(object evaluator_class, object config)
 		{
 			Debug.WriteLine(1);
 		}
-		private static void CheckDuplicate(object list_to_check)
+		private static bool CheckDuplicate(List<Type> listToCheck)
 		{
-			Debug.WriteLine(1);
+			return listToCheck.Count == listToCheck.Count;
 		}
 		public static IEnumerable<Type> FindDerivedTypes(Type baseType)
 		{

@@ -8,6 +8,5 @@ namespace OctoBot.Core
 	{
 		bool TentaclesArchExists();
 		ITentacleManager CreateTentacleManager(ICoreConfig coreConfig);
-		void ManageAdvancedClasses(Core.OctoBot octobot);
 	}
 }

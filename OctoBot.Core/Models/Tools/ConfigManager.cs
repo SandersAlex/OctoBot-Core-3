@@ -198,8 +198,13 @@ namespace OctoBot.Tools
 		{
 			Debug.WriteLine(1);
 		}
-		public static void ReloadTentacleConfig(object config)
+		public static void ReloadTentacleConfig(ICoreConfig config)
 		{
+			var a = ConfigBase.LoadConfig(ConfigVars.CONFIG_EVALUATOR_FILE_PATH, false);
+
+			//config.Evaluator = ConfigBase.LoadConfig(ConfigVars.CONFIG_EVALUATOR_FILE_PATH, false);
+			//if (config.Evaluator == null) throw new ConfigEvaluatorError();
+
 			Debug.WriteLine(1);
 		}
 		public static bool HasInvalidDefaultConfigValue(string configValues)

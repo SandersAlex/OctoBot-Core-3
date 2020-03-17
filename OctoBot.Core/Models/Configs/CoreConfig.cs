@@ -24,7 +24,8 @@ namespace OctoBot.Core
 		public TraderSimulator TraderSimulator { get; set; }
 		public Trading Trading { get; set; }
 		public List<string> WatchedSymbols { get; set; }
-		public object AdvancedClasses { get; set; }
+		public Dictionary<string, object> AdvancedClasses { get; set; }
+		public List<Type> Evaluator { get; set; }
 
 		public CoreConfig()
 		{
@@ -39,6 +40,8 @@ namespace OctoBot.Core
 			TraderSimulator = new TraderSimulator();
 			Trading = new Trading();
 			WatchedSymbols = new List<string>();
+			AdvancedClasses = new Dictionary<string, object>();
+			Evaluator = new List<Type>();
 		}
 	}
 	public class Backtesting

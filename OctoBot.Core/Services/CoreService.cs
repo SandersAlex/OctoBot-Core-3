@@ -108,7 +108,7 @@ namespace OctoBot.Core
 							Commands.PackageManager(tentacleManagerService, Config, new List<string>() { "install", "all" }, force: true);
 						}
 
-						// ConfigManager.ReloadTentacleConfig(Config);
+						ConfigManager.ReloadTentacleConfig(Config);
 
 						if (parseResult["data_collector"] != null)
 						{
